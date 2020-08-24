@@ -5,8 +5,13 @@ const fi = (function() {
     },
 
     each: function(collection, element) {
-
+      const newCollection = (collection instanceof Array) ? collection.slice() : Object.values(collection);
     },
+
+  for ( let i = 0; i < newCollection.length; i++)
+    element (newCollection[i]);
+
+    return collection;
 
     map: function() {
 
